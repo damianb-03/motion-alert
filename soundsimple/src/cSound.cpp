@@ -54,7 +54,7 @@ void cSound::ProccessRecording(const sf::Int16* Samples, std::size_t SamplesCoun
 	//Calculate magnitude
 	double r, i, magOne;
 	std::vector<double> mag;
-	double maxMag = 0;
+	double maxMag = 0.001;
 	for (size_t ind = 0; ind < N; ind++) {
 		i = out[ind][0];
 		r = out[ind][1];
